@@ -15,9 +15,7 @@ export const TodoInfo = ({ todo }) => {
       {todo.user ? (
         <UserInfo user={todo.user} />
       ) : (
-        <span className="UserInfo" href={`mailto:${todo.user?.email}`}>
-          {todo.user?.username || 'No user'}
-        </span>
+        <span className="UserInfo"> {todo.user?.username || 'No user'} </span>
       )}
     </article>
   );
